@@ -4,10 +4,11 @@
   }
 
 body {
+    background-image: url(imagesweb/leaves.avif);
     margin: 0%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #5e705d;
+  
     
 }
 
@@ -117,16 +118,18 @@ body {
   }
 
 
-.photocontainer {
+.photocontainer { 
     grid-area: photocontainer;
     display: flex;
     justify-content: space-evenly;
     padding-top: 100px;
     color: wheat;
+    animation: fadeIn 4s;
    
   
   }
   
+
 
 .contactcontainer {
   grid-area: contactcontainer;
@@ -136,9 +139,13 @@ body {
   background-color: rgb(187, 167, 130);
   padding: 20px;
   font-size: 32pt;
+  animation: fadeIn 4s;
 
- 
+}
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .contactbio {
@@ -150,6 +157,7 @@ body {
   padding: 50px;
   align-content: center;
   font-size: 18pt;
+  animation: fadeIn 4s;
 }
 
 #mail {
